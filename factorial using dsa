@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int factorial(int n)
+{
+    if(n==0)
+    {
+        return 1;
+    }
+    int small=factorial(n-1);
+    int big=n*small;
+    return big;
+    
+}
+
+int main()
+{
+    int num;
+    cout<<"enter the number"<<endl;
+    cin>>num;
+    int ans=factorial(num);
+    cout<<ans<<endl;
+    return 0;
+}
